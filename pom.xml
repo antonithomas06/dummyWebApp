@@ -20,7 +20,7 @@
   <url>http://www.example.com</url>
 
   <properties>
-    <java.version>11</java.version>
+    <java.version>13</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
@@ -118,6 +118,14 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>9</source>
+            <target>9</target>
+          </configuration>
         </plugin>
       </plugins>
   </build>
